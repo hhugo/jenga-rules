@@ -405,7 +405,7 @@ let root_var_table = [
   "ALLOW_HARDWARE_SPECIALIZATION", Bool.to_string allow_hardware_specialization;
 ] @ External_apis.root_var_table
 
-let javascript_enabled = Compiler_selection.m32
+let javascript_enabled = Compiler_selection.m32 || true
 let javascript_separate_compilation = for_javascript_development
 
 let root_var_lookup =
